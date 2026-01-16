@@ -32,7 +32,4 @@ An **AI-powered product recommendation web application** where users describe th
 - **Frontend:** Vercel / Netlify
 - **Backend:** Render
 
----
-
-## 📂 Project Structure
-
+--
