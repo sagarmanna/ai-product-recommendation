@@ -4,7 +4,13 @@ import dotenv from "dotenv";
 import OpenAI from "openai";
 import { PRODUCTS } from "./products.js";
 import { extractJson, safeParseJson } from "./utils.js";
-
+app.use(
+  cors({
+    origin: "*", // allow requests from anywhere (Vercel, Netlify)
+    methods: ["GET", "POST"],
+    allowedHeaders: ["Content-Type"],
+  })
+);
 dotenv.config();
 
 const app = express();
